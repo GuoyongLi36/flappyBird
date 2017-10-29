@@ -203,7 +203,6 @@ function init() {
 		crashTestTimer = setInterval(judge, 1000 / 60);
 	}
 }
-init();
 //重新开始
 var game_restart = document.querySelector(".game_restart")
 game_restart.onclick = restart;
