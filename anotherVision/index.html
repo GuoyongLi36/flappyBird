@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><base href=".">
+    
+    <title>FlyBird</title>
+</head>
+<script src= "./game.js"></script>
+<div class = canvas></div>
+<div id = flybird class = bird></div>
+<div id = start class = start_btn type="button" value="clickme" onclick="init();"></div>
+<div id = head class= head ></div>
+<div id = pipe_up1 class = pipe_up></div>
+<div id = pipe_down1 class = pipe_down></div>
+<div id = pipe_up2 class = pipe_up></div>
+<div id = pipe_down2 class = pipe_down></div>
+<div id = pipe_up_fill1 class = pipe_up_part></div>
+<div id = pipe_down_fill1 class = pipe_down_part></div>
+<div id = pipe_up_fill2 class = pipe_up_part></div>
+<div id = pipe_down_fill2 class = pipe_down_part></div>
+<body>
+</body>
+<style>
+    .canvas {
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 343px;
+    height: 480px;
+    background: url(https://raw.githubusercontent.com/litong9406/flappy_bird/master/flappy%20bird/css/../images/bg.jpg) no-repeat;
+    
+}
+    #flybird{
+  position: absolute;
+  /*z-index: 10;*/
+  width: 40px;
+  height: 30px;
+  left: 240px;
+  top:150px;
+  background: url(https://raw.githubusercontent.com/litong9406/flappy_bird/master/flappy%20bird/css/../images/bird0.png) no-repeat;
+  overflow:hidden;
+}
+    .start_btn {
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left:100px;
+    top:270px;
+    background: url(https://raw.githubusercontent.com/litong9406/flappy_bird/master/flappy%20bird/css/../images/start.jpg) no-repeat;
+    margin-left: 10px;
+}
+        .head {
+    position: absolute;
+    width: 190px;
+    height: 75px;
+    left:50px;
+    top:120px;
+    background: url(./head.jpg);
+}
+    
+    /*    left:0px;
+    top:4px;
+    width: 80px;
+    height: 60px;*/
+    
+ .pipe_up{
+    position: absolute;
+    left:0px;
+    top:2px;
+    width: 80px;
+    height: 60px;
+    display: none;
+    background: url(https://raw.githubusercontent.com/litong9406/flappy_bird/master/flappy%20bird/css/../images/up_pipe.png) 0 bottom no-repeat;
+}
+.pipe_down{
+    position: absolute;
+    left:0px;
+    top:363px;
+    width: 80px;
+    height: 60px;
+    display: none;
+    background: url(https://raw.githubusercontent.com/litong9406/flappy_bird/master/flappy%20bird/css/../images/down_pipe.png) 0 top no-repeat;
+}
+
+
+.pipe_up_part{
+  position:absolute;
+  left:0px;
+  top:0px;
+  width: 60px;
+  height: 4px;
+  display: none;
+  background:
+  url(https://raw.githubusercontent.com/litong9406/flappy_bird/master/flappy%20bird/css/../images/up_mod.png) repeat-y;
+}
+
+    
+.pipe_down_part{
+  position:absolute;
+  left:0px;
+  top:423px;
+  width: 10px;
+  height: 2px;
+  display: none;
+  background:
+  url(https://raw.githubusercontent.com/litong9406/flappy_bird/master/flappy%20bird/css/../images/down_mod.png) repeat-y;
+}
+</style>
